@@ -1,14 +1,14 @@
 import React from 'react'
 import Layout from '../components/Layout'
 
-function Home() {
+function AboutUs() {
   return (
+    <Layout>
     <div>
-      <Layout>
-        ram is a good boy
-      </Layout>
+      This is me AboutUs
     </div>
+    </Layout>
   )
 }
 
-export default Home
+export default AboutUs
