@@ -21,9 +21,6 @@ function App() {
     <Route path='/term&condition' element={ <TermCondition />}/>
     <Route path='/contactus' element={ <ContactUs />}/>
    </Routes>
-     
-     
-    
     </>
   )
 }

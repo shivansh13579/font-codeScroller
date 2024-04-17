@@ -15,3 +15,8 @@ function Layout({children}) {
 }
 
 export default Layout
+
+
+let x = {name: "bikash"}
+
+let {name}=x

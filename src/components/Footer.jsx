@@ -7,11 +7,11 @@ import { PiYoutubeLogoThin } from "react-icons/pi";
 function Footer() {
   return (
     <>
-    <div className="bg-black w-full max-h-screen ">
-      <div className="container">
-        <div className="flex py-8">
 
-          <div className="text-white flex-col w-1/3">
+    <div className="bg-black py-4 ">
+      <div className="container">
+        <div className="w-full flex-col py-8 sm:flex-row">
+          <div className="text-white sm:w-1/3">
             <div>
               <h1 className="text-lg relative">
                 <div>
