@@ -1,13 +1,15 @@
-import React from 'react'
+
+import Header from '../components/Header'
 import Layout from '../components/Layout'
+import ContactUs from './ContactUs'
+
 
 function Home() {
+
   return (
-    <div>
-      <Layout>
-        ram is a good boy
-      </Layout>
-    </div>
+     <Layout>
+    <Header />
+     </Layout>
   )
 }
 

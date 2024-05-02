@@ -1,13 +1,12 @@
 import React from 'react'
-import Header from './Header'
 import Footer from './Footer'
-
+import Navbar from './Navbar'
 
 
 function Layout({children}) {
   return (
     <>
-      <Header />
+       <Navbar />
       <div>{children}</div>
       <Footer />    
     </>
@@ -15,8 +14,3 @@ function Layout({children}) {
 }
 
 export default Layout
-
-
-let x = {name: "bikash"}
-
-let {name}=x

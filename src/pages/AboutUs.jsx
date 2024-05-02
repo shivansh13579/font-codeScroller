@@ -4,8 +4,8 @@ import Layout from '../components/Layout'
 function AboutUs() {
   return (
     <Layout>
-    <div>
-      This is me AboutUs
+    <div className='flex justify-center'>
+      <p>  This is me AboutUs</p>
     </div>
     </Layout>
   )

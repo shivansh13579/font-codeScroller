@@ -2,24 +2,23 @@
 import './App.css'
 import { Routes,Route } from 'react-router-dom';
 import Home from './pages/Home';
-import JavaScript from './pages/JavaScript';
-import Html from './pages/Html';
 import AboutUs from './pages/AboutUs';
 import TermCondition from './pages/TermCondition';
 import ContactUs from './pages/ContactUs';
+import Card1 from './components/Card1';
+import CardDetails from './components/CardDetails';
 
 function App() {
-
-
+  
   return (
     <>
    <Routes>
-    <Route path='/' element={<Home/>}/>
-    <Route path='/javascript' element={<JavaScript />}/>
-    <Route path='/html' element={ <Html />}/>
-    <Route path='/aboutus' element={ <AboutUs />}/>
-    <Route path='/term&condition' element={ <TermCondition />}/>
-    <Route path='/contactus' element={ <ContactUs />}/>
+    <Route path='/' element={ <Home />}/>
+    <Route path='/about' element={ <AboutUs />}/>
+    <Route path='/termcondition' element={ <TermCondition />}/>
+    <Route path='/contact' element={ <ContactUs />}/>
+    <Route path='/card1' element={ <Card1 />} />
+    <Route path='/card1/:id' element={ <CardDetails />}/>
    </Routes>
     </>
   )
