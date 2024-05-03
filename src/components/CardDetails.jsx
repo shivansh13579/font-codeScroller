@@ -1,13 +1,29 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Layout from './Layout'
 import { useParams } from 'react-router-dom';
+import axios from 'axios';
 
 
 function CardDetails() {
+  const {id} = useParams()
+  const [fetchData ,setFetchData] = useState([])
+  const [error,setError] = useState(false)
 
-const {id} = useParams()
 
-console.log(id);
+useEffect(()=>{
+  ;(async () => {
+    try {
+       const response = await axios.get(`/api/products/${id}`)
+       console.log(response.data)
+       setFetchData(response.data)
+    } catch (error) {
+      setError(true)
+    }
+
+  })()
+},[id])
+
+
 
   return (
     <Layout>

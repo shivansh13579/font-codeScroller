@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import Layout from './Layout';
 import axios from 'axios';
-import {Link, useNavigate} from 'react-router-dom';
+import {Link} from 'react-router-dom';
 
 
 
@@ -12,7 +12,6 @@ function Card1() {
   const [error,setError] = useState(false)
   const [search,setSearch] = useState('')
 
-  const navigate = useNavigate()
 
   useEffect(()=>{
     const controller = new AbortController()
@@ -41,9 +40,6 @@ function Card1() {
     }
   },[search])
 
-//   function handleData(product){
-//      navigate(`/card1/${product.id}`)
-//   }
 
    return (
    <Layout>
